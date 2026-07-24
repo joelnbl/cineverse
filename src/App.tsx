@@ -3,7 +3,6 @@ import { Hero } from "./layout/Hero";
 import { Footer } from "./layout/Footer";
 import { TrendingMovieList } from "./movies/components/TrendingMovieList";
 import { useTrendingMovies } from "./movies/hooks/useTrendingMovies";
-import { MovieFilters } from "./movies/components/MovieFilters";
 
 function App() {
   const { movies, loading, hasMore, fetchNextPage } = useTrendingMovies();
@@ -16,8 +15,6 @@ function App() {
       <Hero />
 
       <main className="max-w-7xl mx-auto px-6 py-10 flex gap-8 flex-1 w-full">
-        <MovieFilters />
-
         <div className="flex-1">
           <div className="flex items-center justify-between mb-6">
             <p className="text-gray-400 text-sm">

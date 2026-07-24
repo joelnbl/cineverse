@@ -6,7 +6,7 @@ import type { TrendingMovie } from "../actions/trending-movies.interface";
 
 export const useTrendingMovies = () => {
   const [movies, setMovies] = useState<TrendingMovie[]>([]);
-  const [, setPage] = useState(1);
+  const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(false);
   const [hasMore, setHasMore] = useState(true);
 
@@ -36,7 +36,7 @@ export const useTrendingMovies = () => {
   }, []);
 
   useEffect(() => {
-    loadMovies(1);
+    loadMovies(page);
   }, [loadMovies]);
 
   const fetchNextPage = useCallback(() => {

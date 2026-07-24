@@ -1,4 +1,4 @@
-import { Search, Plus, Bell } from "lucide-react";
+import { Search, Plus, Bell, Clapperboard } from "lucide-react";
 
 const NAV_ITEMS = ["Movies", "TV Shows", "People", "Awards"];
 
@@ -9,7 +9,7 @@ export function Header() {
         <div className="flex items-center gap-10">
           <a href="/" className="flex items-center gap-2">
             <div className="w-7 h-7 rounded-md bg-cyan-400 flex items-center justify-center text-[#0B1220] font-bold text-sm">
-              ▦
+              <Clapperboard />
             </div>
             <span className="text-white font-bold text-lg tracking-tight">
               CineVerse
