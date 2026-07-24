@@ -1,0 +1,71 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Hero > should render the title correctly 1`] = `
+<div>
+  <section
+    class="border-b border-white/5"
+  >
+    <div
+      class="max-w-7xl mx-auto px-6 py-14"
+    >
+      <div
+        class="flex items-center gap-2 text-cyan-400 text-sm font-medium mb-4"
+      >
+        <svg
+          aria-hidden="true"
+          class="lucide lucide-layout-grid w-4 h-4"
+          fill="none"
+          height="24"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            height="7"
+            rx="1"
+            width="7"
+            x="3"
+            y="3"
+          />
+          <rect
+            height="7"
+            rx="1"
+            width="7"
+            x="14"
+            y="3"
+          />
+          <rect
+            height="7"
+            rx="1"
+            width="7"
+            x="14"
+            y="14"
+          />
+          <rect
+            height="7"
+            rx="1"
+            width="7"
+            x="3"
+            y="14"
+          />
+        </svg>
+        Popular this week
+      </div>
+      <h1
+        class="text-4xl md:text-5xl font-bold text-white tracking-tight leading-tight"
+      >
+        Discover your next favorite film
+      </h1>
+      <p
+        class="mt-4 text-gray-400 max-w-xl leading-relaxed"
+      >
+        Browse trending movies and fine-tune with intuitive filters for genre, score, and runtime — all in one place.
+      </p>
+    </div>
+  </section>
+</div>
+`;
