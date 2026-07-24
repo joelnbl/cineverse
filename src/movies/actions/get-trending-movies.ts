@@ -1,10 +1,28 @@
 import { toTrendingMovie } from "../adapters/ trending-movies.adapter";
 import { tmdbApi } from "../api/TMDB.api";
+
 import type { TmdbTrendingResponse } from "../interfaces.ts/tmdb-trending.response";
 import type { TrendingMovie } from "./trending-movies.interface";
 
-export const getTrendingMovies = async (): Promise<TrendingMovie[]> => {
-  const { data } = await tmdbApi<TmdbTrendingResponse>("3/trending/movie/day");
+interface TrendingMoviesResponse {
+  movies: TrendingMovie[];
+  totalPages: number;
+}
 
-  return data.results.map(toTrendingMovie);
+export const getTrendingMovies = async (
+  page: number = 1,
+): Promise<TrendingMoviesResponse> => {
+  const { data } = await tmdbApi.get<TmdbTrendingResponse>(
+    "/trending/movie/day",
+    {
+      params: {
+        page,
+      },
+    },
+  );
+
+  return {
+    movies: data.results.map(toTrendingMovie),
+    totalPages: data.total_pages,
+  };
 };

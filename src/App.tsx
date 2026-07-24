@@ -6,7 +6,9 @@ import { useTrendingMovies } from "./movies/hooks/useTrendingMovies";
 import { MovieFilters } from "./movies/components/MovieFilters";
 
 function App() {
-  const { movies, loading } = useTrendingMovies();
+  const { movies, loading, hasMore, fetchNextPage } = useTrendingMovies();
+
+  const isInitialLoading = loading && movies.length === 0;
 
   return (
     <div className="min-h-screen bg-[#0B1220] flex flex-col">
@@ -26,10 +28,18 @@ function App() {
             </p>
           </div>
 
-          {loading ? (
-            <div className="text-center py-20 text-gray-500">Cargando…</div>
+          {isInitialLoading ? (
+            <div className="flex justify-center items-center py-20 text-gray-400">
+              <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-indigo-500 mr-3" />
+              <span>Cargando catálogo...</span>
+            </div>
           ) : (
-            <TrendingMovieList movies={movies ?? []} />
+            <TrendingMovieList
+              movies={movies}
+              fetchNextPage={fetchNextPage}
+              hasMore={hasMore}
+              isLoading={loading}
+            />
           )}
         </div>
       </main>
