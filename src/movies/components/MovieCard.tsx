@@ -24,8 +24,8 @@ export const MovieCard = ({ movie }: MovieCardProps) => {
           </span>
         </div>
 
-        <button className="absolute cursor-pointer top-3 right-3 w-7 h-7 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center text-white/80 hover:text-cyan-400 transition-colors">
-          <Bookmark className="w-3.5 h-3.5" />
+        <button className="group/btn absolute cursor-pointer top-3 right-3 w-7 h-7 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center text-white/80 hover:bg-white transition-colors">
+          <Bookmark className="w-3.5 h-3.5 transition-colors group-hover/btn:fill-yellow-400 group-hover/btn:text-yellow-500" />
         </button>
       </div>
 
