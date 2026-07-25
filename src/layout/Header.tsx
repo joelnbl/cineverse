@@ -48,7 +48,7 @@ export function Header() {
             <Bell className="w-5 h-5" />
             <span className="absolute -top-0.5 -right-0.5 w-2 h-2 rounded-full bg-amber-400" />
           </button>
-          <div className="w-8 h-8 rounded-full bg-gradient-to-br from-cyan-400 to-emerald-400 flex items-center justify-center text-xs font-semibold text-[#0B1220]">
+          <div className="w-8 h-8 rounded-full bg-linear-to-br from-cyan-400 to-emerald-400 flex items-center justify-center text-xs font-semibold text-[#0B1220]">
             J
           </div>
         </div>

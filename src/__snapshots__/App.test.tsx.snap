@@ -1,0 +1,459 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`App > should render component properly 1`] = `
+<div>
+  <div
+    class="min-h-screen bg-[#0B1220] flex flex-col"
+  >
+    <header
+      class="sticky top-0 z-50 bg-[#0B1220]/95 backdrop-blur-md border-b border-white/5"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between"
+      >
+        <div
+          class="flex items-center gap-10"
+        >
+          <a
+            class="flex items-center gap-2"
+            href="/"
+          >
+            <div
+              class="w-7 h-7 rounded-md bg-cyan-400 flex items-center justify-center text-[#0B1220] font-bold text-sm"
+            >
+              <svg
+                aria-hidden="true"
+                class="lucide lucide-clapperboard"
+                fill="none"
+                height="24"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m12.296 3.464 3.02 3.956"
+                />
+                <path
+                  d="M20.2 6 3 11l-.9-2.4c-.3-1.1.3-2.2 1.3-2.5l13.5-4c1.1-.3 2.2.3 2.5 1.3z"
+                />
+                <path
+                  d="M3 11h18v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+                />
+                <path
+                  d="m6.18 5.276 3.1 3.899"
+                />
+              </svg>
+            </div>
+            <span
+              class="text-white font-bold text-lg tracking-tight"
+            >
+              CineVerse
+            </span>
+          </a>
+          <nav
+            class="hidden md:flex items-center gap-7"
+          >
+            <a
+              class="text-sm transition-colors text-white font-medium"
+              href="#"
+            >
+              Movies
+            </a>
+            <a
+              class="text-sm transition-colors text-gray-400 hover:text-white"
+              href="#"
+            >
+              TV Shows
+            </a>
+            <a
+              class="text-sm transition-colors text-gray-400 hover:text-white"
+              href="#"
+            >
+              People
+            </a>
+            <a
+              class="text-sm transition-colors text-gray-400 hover:text-white"
+              href="#"
+            >
+              Awards
+            </a>
+          </nav>
+        </div>
+        <div
+          class="flex items-center gap-4"
+        >
+          <div
+            class="hidden sm:flex items-center gap-2 bg-white/5 rounded-full px-4 py-2 w-64"
+          >
+            <svg
+              aria-hidden="true"
+              class="lucide lucide-search w-4 h-4 text-gray-500"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m21 21-4.34-4.34"
+              />
+              <circle
+                cx="11"
+                cy="11"
+                r="8"
+              />
+            </svg>
+            <input
+              class="bg-transparent text-sm text-gray-300 placeholder:text-gray-500 outline-none w-full"
+              placeholder="Search films..."
+            />
+          </div>
+          <button
+            class="text-gray-400 hover:text-white transition-colors"
+          >
+            <svg
+              aria-hidden="true"
+              class="lucide lucide-plus w-5 h-5"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5 12h14"
+              />
+              <path
+                d="M12 5v14"
+              />
+            </svg>
+          </button>
+          <button
+            class="relative text-gray-400 hover:text-white transition-colors"
+          >
+            <svg
+              aria-hidden="true"
+              class="lucide lucide-bell w-5 h-5"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.268 21a2 2 0 0 0 3.464 0"
+              />
+              <path
+                d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"
+              />
+            </svg>
+            <span
+              class="absolute -top-0.5 -right-0.5 w-2 h-2 rounded-full bg-amber-400"
+            />
+          </button>
+          <div
+            class="w-8 h-8 rounded-full bg-gradient-to-br from-cyan-400 to-emerald-400 flex items-center justify-center text-xs font-semibold text-[#0B1220]"
+          >
+            J
+          </div>
+        </div>
+      </div>
+    </header>
+    <section
+      class="border-b border-white/5"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 py-14"
+      >
+        <div
+          class="flex items-center gap-2 text-cyan-400 text-sm font-medium mb-4"
+        >
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-layout-grid w-4 h-4"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              height="7"
+              rx="1"
+              width="7"
+              x="3"
+              y="3"
+            />
+            <rect
+              height="7"
+              rx="1"
+              width="7"
+              x="14"
+              y="3"
+            />
+            <rect
+              height="7"
+              rx="1"
+              width="7"
+              x="14"
+              y="14"
+            />
+            <rect
+              height="7"
+              rx="1"
+              width="7"
+              x="3"
+              y="14"
+            />
+          </svg>
+          Popular this week
+        </div>
+        <h1
+          class="text-4xl md:text-5xl font-bold text-white tracking-tight leading-tight"
+        >
+          Discover your next favorite film
+        </h1>
+        <p
+          class="mt-4 text-gray-400 max-w-xl leading-relaxed"
+        >
+          Browse trending movies and fine-tune with intuitive filters for genre, score, and runtime — all in one place.
+        </p>
+      </div>
+    </section>
+    <main
+      class="max-w-7xl mx-auto px-6 py-10 flex gap-8 flex-1 w-full"
+    >
+      <div
+        class="flex-1"
+      >
+        <div
+          class="flex items-center justify-between mb-6"
+        >
+          <p
+            class="text-gray-400 text-sm"
+          >
+            <span
+              class="text-white font-semibold"
+            >
+              0
+            </span>
+             
+            films found
+          </p>
+        </div>
+        <div
+          class="flex justify-center items-center py-20 text-gray-400"
+        >
+          <div
+            class="animate-spin rounded-full h-8 w-8 border-b-2 border-indigo-500 mr-3"
+          />
+          <span>
+            Cargando catálogo...
+          </span>
+        </div>
+      </div>
+    </main>
+    <footer
+      class="border-t border-white/5 mt-16"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 py-12"
+      >
+        <div
+          class="grid grid-cols-2 md:grid-cols-4 gap-10"
+        >
+          <div
+            class="col-span-2 md:col-span-1"
+          >
+            <div
+              class="flex items-center gap-2 mb-3"
+            >
+              <div
+                class="w-7 h-7 rounded-md bg-cyan-400 flex items-center justify-center text-[#0B1220] font-bold text-sm"
+              >
+                ▦
+              </div>
+              <span
+                class="text-white font-bold text-lg tracking-tight"
+              >
+                CineVerse
+              </span>
+            </div>
+            <p
+              class="text-sm text-gray-500 leading-relaxed"
+            >
+              Discover, track, and rate every film worth watching.
+            </p>
+          </div>
+          <div>
+            <p
+              class="text-white text-sm font-semibold mb-3"
+            >
+              Explore
+            </p>
+            <ul
+              class="space-y-2"
+            >
+              <li>
+                <a
+                  class="text-sm text-gray-500 hover:text-cyan-400 transition-colors"
+                  href="#"
+                >
+                  Movies
+                </a>
+              </li>
+              <li>
+                <a
+                  class="text-sm text-gray-500 hover:text-cyan-400 transition-colors"
+                  href="#"
+                >
+                  TV Shows
+                </a>
+              </li>
+              <li>
+                <a
+                  class="text-sm text-gray-500 hover:text-cyan-400 transition-colors"
+                  href="#"
+                >
+                  People
+                </a>
+              </li>
+              <li>
+                <a
+                  class="text-sm text-gray-500 hover:text-cyan-400 transition-colors"
+                  href="#"
+                >
+                  Awards
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p
+              class="text-white text-sm font-semibold mb-3"
+            >
+              Company
+            </p>
+            <ul
+              class="space-y-2"
+            >
+              <li>
+                <a
+                  class="text-sm text-gray-500 hover:text-cyan-400 transition-colors"
+                  href="#"
+                >
+                  About
+                </a>
+              </li>
+              <li>
+                <a
+                  class="text-sm text-gray-500 hover:text-cyan-400 transition-colors"
+                  href="#"
+                >
+                  Careers
+                </a>
+              </li>
+              <li>
+                <a
+                  class="text-sm text-gray-500 hover:text-cyan-400 transition-colors"
+                  href="#"
+                >
+                  Press
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p
+              class="text-white text-sm font-semibold mb-3"
+            >
+              Legal
+            </p>
+            <ul
+              class="space-y-2"
+            >
+              <li>
+                <a
+                  class="text-sm text-gray-500 hover:text-cyan-400 transition-colors"
+                  href="#"
+                >
+                  Terms
+                </a>
+              </li>
+              <li>
+                <a
+                  class="text-sm text-gray-500 hover:text-cyan-400 transition-colors"
+                  href="#"
+                >
+                  Privacy
+                </a>
+              </li>
+              <li>
+                <a
+                  class="text-sm text-gray-500 hover:text-cyan-400 transition-colors"
+                  href="#"
+                >
+                  Cookies
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="mt-10 pt-6 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4"
+        >
+          <p
+            class="text-xs text-gray-600"
+          >
+            © 
+            2026
+             CineVerse. All rights reserved.
+          </p>
+          <div
+            class="flex items-center gap-4"
+          >
+            <a
+              class="text-xs text-gray-500 hover:text-cyan-400 transition-colors"
+              href="#"
+            >
+              Twitter
+            </a>
+            <a
+              class="text-xs text-gray-500 hover:text-cyan-400 transition-colors"
+              href="#"
+            >
+              Instagram
+            </a>
+            <a
+              class="text-xs text-gray-500 hover:text-cyan-400 transition-colors"
+              href="#"
+            >
+              Letterboxd
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
+`;

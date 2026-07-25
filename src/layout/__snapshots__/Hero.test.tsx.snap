@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Hero > should render the title correctly 1`] = `
+exports[`Hero > should render component propertly 1`] = `
 <div>
   <section
     class="border-b border-white/5"

@@ -1,0 +1,187 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Footer > should render component propertly 1`] = `
+<div>
+  <footer
+    class="border-t border-white/5 mt-16"
+  >
+    <div
+      class="max-w-7xl mx-auto px-6 py-12"
+    >
+      <div
+        class="grid grid-cols-2 md:grid-cols-4 gap-10"
+      >
+        <div
+          class="col-span-2 md:col-span-1"
+        >
+          <div
+            class="flex items-center gap-2 mb-3"
+          >
+            <div
+              class="w-7 h-7 rounded-md bg-cyan-400 flex items-center justify-center text-[#0B1220] font-bold text-sm"
+            >
+              ▦
+            </div>
+            <span
+              class="text-white font-bold text-lg tracking-tight"
+            >
+              CineVerse
+            </span>
+          </div>
+          <p
+            class="text-sm text-gray-500 leading-relaxed"
+          >
+            Discover, track, and rate every film worth watching.
+          </p>
+        </div>
+        <div>
+          <p
+            class="text-white text-sm font-semibold mb-3"
+          >
+            Explore
+          </p>
+          <ul
+            class="space-y-2"
+          >
+            <li>
+              <a
+                class="text-sm text-gray-500 hover:text-cyan-400 transition-colors"
+                href="#"
+              >
+                Movies
+              </a>
+            </li>
+            <li>
+              <a
+                class="text-sm text-gray-500 hover:text-cyan-400 transition-colors"
+                href="#"
+              >
+                TV Shows
+              </a>
+            </li>
+            <li>
+              <a
+                class="text-sm text-gray-500 hover:text-cyan-400 transition-colors"
+                href="#"
+              >
+                People
+              </a>
+            </li>
+            <li>
+              <a
+                class="text-sm text-gray-500 hover:text-cyan-400 transition-colors"
+                href="#"
+              >
+                Awards
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p
+            class="text-white text-sm font-semibold mb-3"
+          >
+            Company
+          </p>
+          <ul
+            class="space-y-2"
+          >
+            <li>
+              <a
+                class="text-sm text-gray-500 hover:text-cyan-400 transition-colors"
+                href="#"
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                class="text-sm text-gray-500 hover:text-cyan-400 transition-colors"
+                href="#"
+              >
+                Careers
+              </a>
+            </li>
+            <li>
+              <a
+                class="text-sm text-gray-500 hover:text-cyan-400 transition-colors"
+                href="#"
+              >
+                Press
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p
+            class="text-white text-sm font-semibold mb-3"
+          >
+            Legal
+          </p>
+          <ul
+            class="space-y-2"
+          >
+            <li>
+              <a
+                class="text-sm text-gray-500 hover:text-cyan-400 transition-colors"
+                href="#"
+              >
+                Terms
+              </a>
+            </li>
+            <li>
+              <a
+                class="text-sm text-gray-500 hover:text-cyan-400 transition-colors"
+                href="#"
+              >
+                Privacy
+              </a>
+            </li>
+            <li>
+              <a
+                class="text-sm text-gray-500 hover:text-cyan-400 transition-colors"
+                href="#"
+              >
+                Cookies
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="mt-10 pt-6 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4"
+      >
+        <p
+          class="text-xs text-gray-600"
+        >
+          © 
+          2026
+           CineVerse. All rights reserved.
+        </p>
+        <div
+          class="flex items-center gap-4"
+        >
+          <a
+            class="text-xs text-gray-500 hover:text-cyan-400 transition-colors"
+            href="#"
+          >
+            Twitter
+          </a>
+          <a
+            class="text-xs text-gray-500 hover:text-cyan-400 transition-colors"
+            href="#"
+          >
+            Instagram
+          </a>
+          <a
+            class="text-xs text-gray-500 hover:text-cyan-400 transition-colors"
+            href="#"
+          >
+            Letterboxd
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+`;

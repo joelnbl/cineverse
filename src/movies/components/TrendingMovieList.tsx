@@ -1,6 +1,6 @@
-import { useRef, useEffect, useCallback } from "react";
 import { MovieCard } from "./MovieCard";
 import type { TrendingMovie } from "../actions/trending-movies.interface";
+import { useInfiniteScroll } from "../hooks/useInfiniteScroll";
 
 interface Props {
   movies: TrendingMovie[];
@@ -15,34 +15,11 @@ export const TrendingMovieList = ({
   hasMore,
   isLoading,
 }: Props) => {
-  const observerRef = useRef<HTMLDivElement | null>(null);
-
-  const handleObserver = useCallback(
-    (entries: IntersectionObserverEntry[]) => {
-      const [entry] = entries;
-      if (entry.isIntersecting && hasMore && !isLoading) {
-        fetchNextPage();
-      }
-    },
-    [fetchNextPage, hasMore, isLoading],
-  );
-
-  useEffect(() => {
-    const element = observerRef.current;
-    if (!element) return;
-
-    const observer = new IntersectionObserver(handleObserver, {
-      root: null,
-      rootMargin: "300px",
-      threshold: 0,
-    });
-
-    observer.observe(element);
-
-    return () => {
-      if (element) observer.unobserve(element);
-    };
-  }, [handleObserver]);
+  const observerRef = useInfiniteScroll({
+    hasMore,
+    isLoading,
+    onLoadMore: fetchNextPage,
+  });
 
   return (
     <div>
@@ -53,17 +30,9 @@ export const TrendingMovieList = ({
       </div>
 
       <div ref={observerRef} className="py-8 flex justify-center items-center">
-        {isLoading && (
-          <div className="flex items-center gap-2 text-gray-400">
-            <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-indigo-500" />
-            <span>Cargando más películas...</span>
-          </div>
-        )}
-
+        {isLoading && <span>Cargando más películas...</span>}
         {!hasMore && movies.length > 0 && (
-          <p className="text-gray-500 text-sm">
-            Has llegado al final del catálogo.
-          </p>
+          <p>Has llegado al final del catálogo.</p>
         )}
       </div>
     </div>
